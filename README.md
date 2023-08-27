@@ -29,7 +29,7 @@ across different emotions is visually depicted in the picture below:
 #### Overview
 
 <div align="center">
-<img src="Images/p4.PNG" alt="overview" width="600"/>
+<img src="Images/p4.PNG" alt="overview" width="700"/>
 </div>
 
 
