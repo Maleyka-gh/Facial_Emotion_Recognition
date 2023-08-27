@@ -9,9 +9,8 @@ systems that directly classify human emotion from face images.
 
 ### Project
 1. This research project developed a deep learning-based system for recognizing seven basic emotions: anger, disgust, happiness,
-sadness, and surprise from human face images.Two convolution neural networks (CNNs)(*shallowcnn.jpymb*), Shallow CNN and Deep CNN, are developed and
-compared, along with exploring the effects of data augmentation and hyperparameter tuning.
-Additionally, the transfer learning approach using the MobileNet architecture is examined.
+sadness, and surprise from human face images. Two convolution neural networks (CNNs) (*shallowcnn.jpynb*), Shallow CNN and Deep CNN (*deepcnn.jpynb*), are developed and compared, along with exploring the effects of data augmentation and hyperparameter tuning.
+Additionally, the transfer learning approach using the MobileNet architecture is examined (*mobilenet.jpynb*).
 2. Furthermore, the project also evaluates the feasibility of this system in real-time settings (*real_time_fer*).
 
 
