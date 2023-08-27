@@ -7,6 +7,18 @@ detecting and interpreting a person’s emotional state based on their facial ex
 learning-based systems are widely being adopted and explored for developing automatic FER
 systems that directly classify human emotion from face images.
 
+### Project Implementation
+#### Overview
+
+<div align="center">
+<img src="Images/p4.PNG" alt="overview" width="700"/>
+</div>
+
+
+
+1. This research project employs deep learning to recognize seven fundamental emotions from facial images: anger, disgust, happiness, sadness, and surprise. We've developed and compared two convolutional neural networks (CNNs): Shallow CNN (*shallowcnn.jpynb*) and Deep CNN (*deepcnn.jpynb*). The study also delves into the impact of data augmentation, hyperparameter tuning, and the transfer learning approach via the MobileNet architecture (mobilenet.jpynb).
+2. Furthermore, the project also evaluates the feasibility of this system in real-time settings (*real_time_fer*). The Haar Cascade Frontal Face detection system was used to detect and extract face images from each live video frame, and the Deep CNN (best-performing model) network classified these images into emotions. The detected face region was marked with a blue detection window, and the corresponding emotion category was displayed. The Deep CNN network successfully detected all seven emotions in the live video.
+
 ### Dataset
 The FER2013 - is a Kaggle dataset designed for facial emotion recognition research and comprises grayscale facial expression images. It contains 35,887 images, each with 48x48x1 pixels (grayscale) dimensions. The dataset is annotated with one of seven emotional categories: anger,
 disgust, fear, happiness, sadness, surprise, and neutral. The images were collected from multiple
@@ -24,18 +36,6 @@ across different emotions is visually depicted in the picture below:
 </div>
 
 
-
-### Project Implementation
-#### Overview
-
-<div align="center">
-<img src="Images/p4.PNG" alt="overview" width="700"/>
-</div>
-
-
-
-1. This research project employs deep learning to recognize seven fundamental emotions from facial images: anger, disgust, happiness, sadness, and surprise. We've developed and compared two convolutional neural networks (CNNs): Shallow CNN (*shallowcnn.jpynb*) and Deep CNN (*deepcnn.jpynb*). The study also delves into the impact of data augmentation, hyperparameter tuning, and the transfer learning approach via the MobileNet architecture (mobilenet.jpynb).
-2. Furthermore, the project also evaluates the feasibility of this system in real-time settings (*real_time_fer*). The Haar Cascade Frontal Face detection system was used to detect and extract face images from each live video frame, and the Deep CNN (best-performing model) network classified these images into emotions. The detected face region was marked with a blue detection window, and the corresponding emotion category was displayed. The Deep CNN network successfully detected all seven emotions in the live video.
 
 
 
