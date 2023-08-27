@@ -39,7 +39,7 @@ across different emotions is visually depicted in the picture below:
 ### Results
 #### Selection of best model
 
-*Note: Please take a look at the notebooks for the model performance graphs and confusion matrixes.*
+*Note: Please take a look at the notebooks for the model performance graphs and confusion matrixes*
 
 The performance of various models is analyzed based on their training, validation,
 and test accuracy. We aim to select the best model that could be used in a Real-Time FER
