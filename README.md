@@ -20,7 +20,7 @@ The distribution of images
 across different emotions is visually depicted in picture below:
 
 <div align="center">
-<img src="Images/p1.PNG" alt="emotions" width="400"/>
+<img src="Images/p1.PNG" alt="distributions" width="400"/>
 </div>
 
 
