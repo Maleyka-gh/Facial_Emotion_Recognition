@@ -14,8 +14,9 @@ of 48x48x1 pixels (grayscale). The dataset is annotated with one of seven emotio
 disgust, fear, happiness, sadness, surprise, and neutral. The images were collected from multiple
 sources and subsequently labeled manually by human annotators.
 
-
+<div align="center">
 <img src="Images/p1.PNG" alt="emotions" width="400"/>
+</div>
 
 The distribution of images
 across different emotions is visually depicted in picture below.
