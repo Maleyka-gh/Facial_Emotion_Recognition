@@ -8,18 +8,20 @@ learning-based systems are widely being adopted and explored for developing auto
 systems that directly classify human emotion from face images.
 
 ### Dataset
-The FER2013 - is a Kaggle dataset that designed for research in facial emotion recognition and comprises
-grayscale images of facial expressions. It contains a total of 35,887 images, each with dimensions
-of 48x48x1 pixels (grayscale). The dataset is annotated with one of seven emotional categories: anger,
+The FER2013 - is a Kaggle dataset designed for facial emotion recognition research and comprises grayscale facial expression images. It contains 35,887 images, each with 48x48x1 pixels (grayscale) dimensions. The dataset is annotated with one of seven emotional categories: anger,
 disgust, fear, happiness, sadness, surprise, and neutral. The images were collected from multiple
 sources and subsequently labeled manually by human annotators.
+<div align="center">
+<img src="Images/p3.PNG" alt="emotions" width="400"/>
+</div>
+
+
+The distribution of images
+across different emotions is visually depicted in picture below:
 
 <div align="center">
 <img src="Images/p1.PNG" alt="emotions" width="400"/>
 </div>
-
-The distribution of images
-across different emotions is visually depicted in picture below.
 
 
 
