@@ -70,7 +70,8 @@ misclassified samples. For instance, samples where Disgust is mistakenly classif
 Sadness or when Surprise is misclassified as Sadness or Anger highlight the inherent difficulty
 distinguishing between certain emotions based solely on facial emotions.
 
-#### Real-time FER (Deepcnn is deployed for real-time facial emotion recognition) 
+#### Real-time FER
+The best-performing model - deepcnn is deployed for real-time facial emotion recognition. 
 
 <div align="center">
 <img src="Images/p7.PNG" alt="distributions" width="400"/>
