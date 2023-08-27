@@ -1,9 +1,12 @@
-### Hi there 👋
+### Theoretical background
 
-<!--
-**Maleyka-gh/Maleyka-gh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Facial expressions play a crucial role in human interaction, serving as a primary means of
+conveying emotions across cultures. These emotions enable individuals to express themselves
+and comprehend the emotional states of others. Facial Expression Recognition (FER) involves
+detecting and interpreting a person’s emotional state based on their facial expressions. Deep
+learning-based systems are widely being adopted and explored for developing automatic FER
+systems that directly classify human emotion from face images. This research project developed
+a deep learning-based system for recognizing seven basic emotions; anger, disgust, happiness,
+sadness, and surprise from human face images. Furthermore, the project also evaluates the
+feasibility of this system in real-time settings.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on "Real time emotion detection" project as  a research project before master thesis as a part of my master program.
-- 🌱 Final year master student in "Communication Systems and Networks" , TH Köln, Germany. 
