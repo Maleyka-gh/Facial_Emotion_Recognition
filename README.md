@@ -13,7 +13,7 @@ grayscale images of facial expressions. It contains a total of 35,887 images, ea
 of 48x48x1 pixels (grayscale). The dataset is annotated with one of seven emotional categories: anger,
 disgust, fear, happiness, sadness, surprise, and neutral. The images were collected from multiple
 sources and subsequently labeled manually by human annotators.
-![emotions](Images/p1.png)
+![emotions](Images/p1.PNG)
 
 The distribution of images
 across different emotions is visually depicted in picture below.
