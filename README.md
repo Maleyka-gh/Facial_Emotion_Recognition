@@ -35,6 +35,43 @@ across different emotions is visually depicted in the picture below:
 <img src="Images/p1.PNG" alt="distributions" width="400"/>
 </div>
 
+### Results
+#### Selection of best model
+
+The performance of various models is analyzed based on their training, validation,
+and test accuracy. We aim to select the best model that could be used in a Real-Time FER
+system. Experiments were conducted on the FER-2013 dataset with 7 emotions
+using Shallow CNN, Deep CNN, and MobileNet. These experiments were carried out with and
+without data augmentation and hyperparameter tuning. Additionally, I employed transfer
+learning using MobileNet and conducted two experiments - one with all emotions and another
+with only the top four emotions (emotions with the higher number of samples). The table below
+summarizes the results of all these experiments. It shows the training, valid, and test accuracy
+of all the experiments.
+
+<div align="center">
+<img src="Images/p6.PNG" alt="distributions" width="400"/>
+</div>
+
+#### Misclassified images across emotions
+
+<div align="center">
+<img src="Images/p5.PNG" alt="distributions" width="400"/>
+</div>
+
+Figure shows the misclassified samples from each emotion category. It can be seen that
+one of the images within the dataset does not contain any identifiable face. This observation
+indicates the presence of irrelevant or mislabeled images, which can hinder the model’s overall
+performance. Additionally, some images exhibit variations in contrast, introducing difficulties
+for the model in accurately capturing and interpreting facial expressions. Furthermore, in several
+images, a hand partially covers the face while expressing emotions. These specific images
+challenge the model and often result in misclassifications. Moreover, the similarity between
+facial expressions belonging to different emotion categories becomes apparent when examining
+misclassified samples. For instance, samples where Disgust is mistakenly classified as Anger or
+Sadness or when Surprise is misclassified as Sadness or Anger highlight the inherent difficulty
+distinguishing between certain emotions based solely on facial emotions.
+
+
+
 
 
 
