@@ -1,3 +1,4 @@
+## FER - Facial Emotion Recognition
 ### Theoretical background
 
 Facial expressions play a crucial role in human interaction, serving as a primary means of
