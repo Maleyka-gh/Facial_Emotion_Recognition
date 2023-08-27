@@ -39,7 +39,7 @@ across different emotions is visually depicted in the picture below:
 ### Results
 #### Selection of best model
 
-*Note: Please take a look at the notebooks for the model performance graphs and confusion matrixes*
+*Note: Please take a look at the notebooks for the model performance graphs and confusion matrixes.*
 
 The performance of various models is analyzed based on their training, validation,
 and test accuracy. We aim to select the best model that could be used in a Real-Time FER
@@ -55,6 +55,28 @@ of all the experiments.
 <img src="Images/p6.PNG" alt="distributions" width="400"/>
 </div>
 
+It can be seen that the training and validation accuracy in each experiment are close to each
+other except in Deep CNN without augmentation case. This shows that all the models learn
+well during training and perform equally on the unseen validation set. However, in the case of
+Deep CNN without augmentation, the high training accuracy of 82.52% without hyperparameter
+tuning and 95.76% with hyperparameter tuning, as compared to validation accuracy, suggests
+that the model overfits the training data. The lower training accuracy, 49.95%, and 48.62% for
+experiments on Shallow CNN with augmented data indicate that the model cannot learn
+effectively.
+The highest test accuracy achieved by the Shallow CNN models is 61.42%, obtained without
+augmentation case. However, this accuracy is relatively low compared to the other models 
+experimented with augmentation. On the contrary, in the Deep CNN case, the highest test accuracy found is
+68.62%, which is the best among all the experiments conducted. This best accuracy is achieved
+by training Deep CNN with augmented data and learning rate tuning. Also, the less difference
+between train and validation accuracy, only 0.43%, shows that the model is generalized well
+to the dataset. In transfer learning experiments with Mobilenet, the test accuracy reaches
+only 58.19%, which is lower than Deep CNN but comparable with Shallow CNN. In testing
+MobileNet with the four emotions dataset, the test accuracy is relatively high, i.e., 67.36%. But
+this model is unsuitable for Real-Time since we aim to detect all the emotions.
+In conclusion, the Deep CNN trained with augmented data and hyperparameter tuning is the best-
+performing model with 68.62% among all other models. Thus, this model is further used and deployed
+in the Real-Time FER system.
+
 #### Misclassified images across emotions:
 
 <div align="center">
@@ -65,12 +87,11 @@ Figure shows the misclassified samples from each emotion category. It can be see
 one of the images within the dataset does not contain any identifiable face. This observation
 indicates the presence of irrelevant or mislabeled images, which can hinder the model’s overall
 performance. Additionally, some images exhibit variations in contrast, introducing difficulties
-for the model in accurately capturing and interpreting facial expressions. Furthermore, in several
-images, a hand partially covers the face while expressing emotions. These specific images
-challenge the model and often result in misclassifications. Moreover, the similarity between
-facial expressions belonging to different emotion categories becomes apparent when examining
+for the model in accurately capturing and interpreting facial expressions. Furthermore, a hand partially covers the face in several images 
+while expressing emotions. These specific images challenge the model and often result in misclassifications.
+Moreover, the similarity between facial expressions belonging to different emotion categories becomes apparent when examining
 misclassified samples. For instance, samples where Disgust is mistakenly classified as Anger or
-Sadness or when Surprise is misclassified as Sadness or Anger highlight the inherent difficulty
+Sadness, or when Surprise is misclassified as Sadness or Anger, highlights the inherent difficulty
 distinguishing between certain emotions based solely on facial emotions.
 
 #### Real-time FER
