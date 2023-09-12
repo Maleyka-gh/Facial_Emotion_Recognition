@@ -12,7 +12,7 @@ systems that directly classify human emotion from face images.
 #### Overview
 
 <div align="center">
-<img src="Images/p4.PNG" alt="overview" width="700"/>
+<img src="Images/p4.PNG" alt="overview" width="800"/>
 </div>
 
 
