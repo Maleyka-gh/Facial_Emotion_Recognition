@@ -80,7 +80,7 @@ in the Real-Time FER system.
 #### Misclassified images across emotions:
 
 <div align="center">
-<img src="Images/p5.PNG" alt="distributions" width="400"/>
+<img src="Images/p5.PNG" alt="distributions" width="800"/>
 </div>
 
 Figure shows the misclassified samples from each emotion category. It can be seen that
