@@ -63,8 +63,7 @@ tuning and 95.76% with hyperparameter tuning, as compared to validation accuracy
 that the model overfits the training data. The lower training accuracy, 49.95%, and 48.62% for
 experiments on Shallow CNN with augmented data indicate that the model can not learn
 effectively.
-- The highest test accuracy achieved by the Shallow CNN models is 61.1%, obtained without
-augmentation case. However, this accuracy is low compared to the other models 
+- The highest test accuracy achieved by the Shallow CNN models is 61.1%, without using data augmentation. However, this accuracy is low compared to the other models 
 experimented with augmentation.
 -  On the contrary, in the Deep CNN case, the highest test accuracy found is
 68.62%, which is the best among all the experiments conducted. This best accuracy is achieved
