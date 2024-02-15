@@ -57,24 +57,25 @@ of all the experiments.
 
 It can be seen that the training and validation accuracy in each experiment are close to each
 other except in Deep CNN without augmentation case. This shows that all the models learn
-well during training and perform equally on the validation set. However, in the case of
+well during training and perform equally good on the validation set. However, in the case of
 Deep CNN without augmentation, the high training accuracy of 82.52% without hyperparameter
 tuning and 95.76% with hyperparameter tuning, as compared to validation accuracy, suggests
 that the model overfits the training data. The lower training accuracy, 49.95%, and 48.62% for
-experiments on Shallow CNN with augmented data indicate that the model cannot learn
+experiments on Shallow CNN with augmented data indicate that the model can not learn
 effectively.
-The highest test accuracy achieved by the Shallow CNN models is 61.1%, obtained without
+- The highest test accuracy achieved by the Shallow CNN models is 61.1%, obtained without
 augmentation case. However, this accuracy is low compared to the other models 
-experimented with augmentation. On the contrary, in the Deep CNN case, the highest test accuracy found is
+experimented with augmentation.
+-  On the contrary, in the Deep CNN case, the highest test accuracy found is
 68.62%, which is the best among all the experiments conducted. This best accuracy is achieved
-by training Deep CNN with augmented data and learning rate tuning. Also, the less difference
+by training Deep CNN with augmented data and  tuning the learning rate.Moreover, the minimum difference
 between train and validation accuracy, only 0.43%, shows that the model is generalized well
-to the dataset. In transfer learning experiments with Mobilenet, the test accuracy reaches
+to the dataset.
+- In transfer learning experiments with Mobilenet, the test accuracy reaches
 only 58.19%, which is lower than Deep CNN but comparable with Shallow CNN. In testing
-MobileNet with the four emotions dataset, the test accuracy is high, i.e., 67.36%. But
-this model is unsuitable for Real-Time since we aim to detect all the emotions.
+MobileNet with the four emotions dataset, the test accuracy is high, i.e., 67.36%.Since we aim to detect all the emotions, this model is unsuitable for Real-Time applications.
 In conclusion, the Deep CNN trained with augmented data and hyperparameter tuning is the best-
-performing model with 68.62% among all other models. Thus, this model is further used and deployed
+performing model with 68.62% test accuracy among all other models. Thus, this model is further used and deployed
 in the Real-Time FER system.
 
 #### Misclassified images across emotions:
@@ -84,15 +85,15 @@ in the Real-Time FER system.
 </div>
 
 Figure shows the misclassified samples from each emotion category. It can be seen that
-one of the images within the dataset does not contain any identifiable face. This observation
+some of the images within the dataset do not contain any identifiable face. This observation
 indicates the presence of irrelevant or mislabeled images, which can hinder the model’s overall
 performance. Additionally, some images exhibit variations in contrast, introducing difficulties
-for the model in accurately capturing and interpreting facial expressions. Furthermore, a hand partially covers the face in several images 
+for the model in accurately capturing and interpreting facial expressions. For example, a hand partially covers the face in several images 
 while expressing emotions. These specific images challenge the model and often result in misclassifications.
 Moreover, the similarity between facial expressions belonging to different emotion categories becomes apparent when examining
 misclassified samples. For instance, samples where Disgust is mistakenly classified as Anger or
 Sadness, or when Surprise is misclassified as Sadness or Anger, highlights the inherent difficulty
-distinguishing between certain emotions based solely on facial emotions.
+distinguishing between certain emotions even with a human eye.
 
 #### Real-time FER
 The best-performing model - deepcnn is deployed for real-time facial emotion recognition. 
