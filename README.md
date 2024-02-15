@@ -44,11 +44,11 @@ across different emotions is visually depicted in the picture below:
 The performance of various models is analyzed based on their training, validation,
 and test accuracy. We aim to select the best model that could be used in a Real-Time FER
 system. Experiments were conducted on the FER-2013 dataset with 7 emotions
-using Shallow CNN, Deep CNN, and MobileNet. These experiments were carried out with and
+using Shallow CNN, Deep CNN and MobileNet. These experiments were carried out with and
 without data augmentation and hyperparameter tuning. Additionally, I employed transfer
 learning using MobileNet and conducted two experiments - one with all emotions and another
 with only the top four emotions (emotions with the higher number of samples). The table below
-summarizes the results of all these experiments. It shows the training, valid, and test accuracy
+summarizes the results of all these experiments. It presents the training, validation and test accuracy
 of all the experiments.
 
 <div align="center">
@@ -57,21 +57,21 @@ of all the experiments.
 
 It can be seen that the training and validation accuracy in each experiment are close to each
 other except in Deep CNN without augmentation case. This shows that all the models learn
-well during training and perform equally on the unseen validation set. However, in the case of
+well during training and perform equally on the validation set. However, in the case of
 Deep CNN without augmentation, the high training accuracy of 82.52% without hyperparameter
 tuning and 95.76% with hyperparameter tuning, as compared to validation accuracy, suggests
 that the model overfits the training data. The lower training accuracy, 49.95%, and 48.62% for
 experiments on Shallow CNN with augmented data indicate that the model cannot learn
 effectively.
 The highest test accuracy achieved by the Shallow CNN models is 61.1%, obtained without
-augmentation case. However, this accuracy is relatively low compared to the other models 
+augmentation case. However, this accuracy is low compared to the other models 
 experimented with augmentation. On the contrary, in the Deep CNN case, the highest test accuracy found is
 68.62%, which is the best among all the experiments conducted. This best accuracy is achieved
 by training Deep CNN with augmented data and learning rate tuning. Also, the less difference
 between train and validation accuracy, only 0.43%, shows that the model is generalized well
 to the dataset. In transfer learning experiments with Mobilenet, the test accuracy reaches
 only 58.19%, which is lower than Deep CNN but comparable with Shallow CNN. In testing
-MobileNet with the four emotions dataset, the test accuracy is relatively high, i.e., 67.36%. But
+MobileNet with the four emotions dataset, the test accuracy is high, i.e., 67.36%. But
 this model is unsuitable for Real-Time since we aim to detect all the emotions.
 In conclusion, the Deep CNN trained with augmented data and hyperparameter tuning is the best-
 performing model with 68.62% among all other models. Thus, this model is further used and deployed
