@@ -17,7 +17,7 @@ systems that directly classify human emotion from face images.
 
 
 
-1. This research project employs deep learning to recognize seven fundamental emotions from facial images: anger, disgust, happiness, sadness, and surprise. We've developed and compared two convolutional neural networks (CNNs): Shallow CNN (*shallowcnn.jpynb*) and Deep CNN (*deepcnn.jpynb*). The study also delves into the impact of data augmentation, hyperparameter tuning, and the transfer learning approach via the MobileNet architecture (mobilenet.jpynb).
+1. This research project employs deep learning to recognize seven fundamental emotions from facial images: anger, disgust, happiness, sadness, and surprise. We've developed and compared two convolutional neural networks (CNNs): Shallow CNN (*shallowcnn.jpynb*) and Deep CNN (*deepcnn.jpynb*). The study also delves into the impact of data augmentation, hyperparameter tuning, and the transfer learning approach via the MobileNet architecture (*mobilenet.jpynb*).
 2. Furthermore, the project also evaluates the feasibility of this system in real-time settings (*real_time_fer*). The Haar Cascade Frontal Face detection system was used to detect and extract face images from each live video frame, and the Deep CNN (best-performing model) network classified these images into emotions. The detected face region was marked with a blue detection window, and the corresponding emotion category was displayed. The Deep CNN network successfully detected all seven emotions in the live video.
 
 ### Dataset
@@ -72,7 +72,7 @@ between train and validation accuracy, only 0.43%, shows that the model is gener
 to the dataset.
 - In transfer learning experiments with Mobilenet, the test accuracy reaches
 only 58.19%, which is lower than Deep CNN but comparable with Shallow CNN. In testing
-MobileNet with the four emotions dataset, the test accuracy is high, i.e., 67.36%.Since we aim to detect all the emotions, this model is unsuitable for Real-Time applications.
+MobileNet with the four emotions dataset, the test accuracy is high, i.e., 67.36%. However, since we aim to detect all the emotions, this model is unsuitable for Real-Time applications.
 In conclusion, the Deep CNN trained with augmented data and hyperparameter tuning is the best-
 performing model with 68.62% test accuracy among all other models. Thus, this model is further used and deployed
 in the Real-Time FER system.
